@@ -1,0 +1,10 @@
+@startuml
+:安排考试;
+:考试安排表;
+:出卷;
+fork
+    :A,B试卷;
+fork again
+    :打印审批表;
+
+@enduml
