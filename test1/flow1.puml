@@ -27,8 +27,13 @@ split
 |教务处|
     if(有不及格？)then(有)
     :安排补考;
+    split
     :补考安排表;
+    stop
+    split again
+    end split
     else(无)
+
     stop
     endif
 
