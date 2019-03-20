@@ -53,7 +53,7 @@ end
 ```
 - 效果图片 
 
-![效果图](images/期末考试.png)
+![效果图](flow1.jpg)
 - 客户维护流程图源码
 ```puml
 @startuml
@@ -94,4 +94,4 @@ end
 @enduml
 ```
 - 效果图片 
-![效果图](images/客户维护.png)
+![效果图](flow2.jpg)
