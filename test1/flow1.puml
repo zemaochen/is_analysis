@@ -26,12 +26,10 @@ split
     :成绩单;
 |教务处|
     if(有不及格？)then(有)
-    :安排补考;
-    split
+        if(补考安排)
     :补考安排表;
     stop
-    split again
-    end split
+    endif
     else(无)
     stop
     endif
@@ -42,7 +40,5 @@ split again
     :装订存档;
 end split
     :期末流程结束;
-
-
 end
 @enduml
