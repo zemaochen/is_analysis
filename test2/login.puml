@@ -1,0 +1,19 @@
+@startuml
+start
+:输入用户;
+if(用户存在?)then(不存在)
+:提示注册;
+stop
+else(存在)
+:输入密码;
+if(密码是否正确？)then(是)
+:登录成功;
+end
+else(否)
+split
+:重新输入;
+stop
+split again
+:找回密码;
+stop
+@enduml
