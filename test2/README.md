@@ -39,7 +39,7 @@ rectangle 图书管理{
 - 主要职责：除了借书与还书外，还有可以查询书目，与书目借阅情况，预定图书，取消预订。
 ### 3.用例规约表
 - [登录](login.md)
-- [借出图书规约表](lend_book.md)
+- [借出图书](lend_book.md)
 - [还书](return.md)
 - [预定图书](order.md)
 - [维护图书](maintain.md)

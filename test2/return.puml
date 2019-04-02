@@ -1,0 +1,14 @@
+@startuml
+start
+:归还已借图书;
+if(丢失)then(y)
+:登记赔偿;
+stop
+else(n)
+if(借书超时？)then(y)
+:交付罚款后归还;
+stop
+else(n)
+:归还登记;
+stop
+@enduml

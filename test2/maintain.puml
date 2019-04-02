@@ -1,0 +1,15 @@
+@startuml
+start
+:维护图书;
+split
+:增加图书;
+:增加书类或库存;
+split again
+:删除图书;
+:减少库存;
+split again
+:修改图书信息;
+:登记修改信息;
+end split
+:输入系统;
+@enduml

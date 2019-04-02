@@ -1,0 +1,10 @@
+@startuml
+start
+:查询书目库存;
+if(库存>0) then (y)
+:借得图书;
+stop
+else(n)
+:登记预定图书信息;
+end
+@enduml
