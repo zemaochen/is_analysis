@@ -1,0 +1,38 @@
+@startuml
+skinparam sequenceParticipant underline
+actor ":图书管理员" as A
+participant ":读者" as B
+participant ":资源项" as C
+participant ":馆藏资源品种" as D
+participant ":借书记录" as E
+activate A
+A->B:验证读者
+activate B
+deactivate B
+A->B:读取读者限额
+activate B
+deactivate B
+loop
+A->C:获取资源项
+activate C
+C->D:查找资源品种
+activate D
+deactivate C
+deactivate D
+A->E:创建借书记录
+activate E
+deactivate E
+A->C:借出资源
+activate C
+C->D:减少可借数量
+activate D
+deactivate C
+deactivate D
+A->B:减少可用限额
+activate B
+end
+deactivate B
+A->E:打印借书清单
+activate E
+deactivate E
+@enduml

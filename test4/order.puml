@@ -1,0 +1,20 @@
+@startuml
+skinparam sequenceParticipant underline
+actor ":读者" as reader
+participant ":资源项" as bt
+participant ":图书管理员" as user
+participant ":馆藏资源品种" as base
+participant ":预定记录" as orderrecord
+activate reader
+reader->bt:输入资源项
+activate bt
+deactivate bt
+reader->user:传递资源项
+activate user
+user->base:查找资源品种
+activate base
+deactivate base
+user->orderrecord:登记预定记录
+deactivate user
+activate orderrecord
+@enduml

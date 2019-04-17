@@ -1,0 +1,24 @@
+@startuml
+skinparam sequenceParticipant underline
+actor ":读者" as reader
+participant ":资源项" as bt
+participant ":管理员" as user
+participant ":借书记录" as lendrecord
+participant ":罚款记录" as finerecord
+activate reader
+reader->bt:输入资源项
+activate bt
+deactivate bt
+reader->user:提交借书信息
+activate user
+user->lendrecord:查询借书记录
+deactivate user
+activate lendrecord
+lendrecord->finerecord:计算罚款并记录
+activate finerecord
+deactivate finerecord
+deactivate lendrecord
+reader->finerecord:缴纳罚款
+activate finerecord
+deactivate finerecord
+@enduml

@@ -1,0 +1,36 @@
+@startuml
+skinparam sequenceParticipant underline
+actor ":图书管理员" as user
+participant ":资源项" as bt
+participant ":借书记录" as record
+participant ":馆藏资源品种" as base
+participant ":读者" as reader
+participant ":逾期记录" as overrecord
+activate user
+user->bt:读取资源信息
+activate bt
+bt->record:取借记录
+activate record
+deactivate record
+bt->base:取资源的品种
+activate base
+deactivate base
+deactivate bt
+user->reader:取借阅者信息
+activate reader
+deactivate reader
+user->bt:归还资源
+activate bt
+bt->base:增加可借数量
+activate base
+deactivate bt
+deactivate base
+user->record:登记还书日期
+opt 逾期
+activate record
+deactivate record
+user->overrecord:登记逾期记录
+activate overrecord
+deactivate overrecord
+end
+@enduml
