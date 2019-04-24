@@ -116,8 +116,8 @@
 |code|返回码|
 
 #### 2.2借书界面设计
-![借书](lendinput.png)<br>
-![借书](search.png)<br>
+![借书](lendinput.PNG)<br>
+![借书](search.PNG)<br>
 ![借书](lend.png)<br>
 - 用例图参见：[test2图书馆里类图借书用例](../test2/README.md)
 - 类图参见：[test3图书管理系统类图，借书记录类](../test3/README.md)
