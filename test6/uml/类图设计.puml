@@ -1,0 +1,49 @@
+@startuml
+title 基于GitHub的实验管理平台--类图
+class users {
+    <b>user_id</b> （用户ID）
+    name （用户真实姓名）
+    github_username （用户GitHub账号）
+    update_date （用户GitHub账号修改日期）
+    password （用户密码）
+}
+class teachers{
+    <b>teacher_id</b> （老师工号）
+    department （老师所属部门）
+}
+class students{
+    <b>student_id</b> （学号）
+    class （班级）
+}
+users <|-- students
+users <|- teachers
+class courses{
+    <b>courses_id</b> （课程表ID）
+    semester （学期）
+}
+
+class course{
+    <b>course_id</b> （课程ID）
+    course_name （课程名）
+}
+class test {
+    <b>test_id</b> （实验编号）
+    title （实验名称）
+    requset （得分项：要求）
+    format （得分项：格式）
+    expansion （得分项：扩展）
+}
+class grade{
+    <b>grade_id</b> （成绩编号）+
+        requset （得分项：要求）
+        format （得分项：格式）
+        expansion （得分项：扩展）
+}
+
+students "1" -- "1"  courses
+courses "1" - "n" course
+course "1" - "n" test
+teachers "1" - "1" courses
+test "1" - "1" grade
+
+@enduml
