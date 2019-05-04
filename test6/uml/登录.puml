@@ -1,0 +1,18 @@
+@startuml
+skinparam sequenceParticipant underline
+actor ":系统用户" as A
+participant ":验证身份" as B
+participant ":验证密码" as C
+participant ":登录成功" as D
+activate A
+A->B:输入id验证身份
+activate B
+deactivate
+A->B:输入密码
+activate B
+B->C:验证密码正确性
+deactivate
+activate C
+C->D:成功登录
+deactivate
+@enduml

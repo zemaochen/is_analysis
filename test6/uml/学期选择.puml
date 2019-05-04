@@ -1,0 +1,18 @@
+@startuml
+skinparam sequenceParticipant underline
+actor user
+participant ":多个学期" as semesters
+participant ":courses" as courses
+participant ":students" as students
+participant ":grade" as grade
+alt user是teacher
+    user->semesters:选择历史学期
+    semesters->courses:选择该学期课程
+    courses->students:显示课程所有学生
+    students->grade:选择一个学生查看成绩
+else  user 是student
+    user->semesters:选择历史学期
+    semesters->courses:选择该学期课程
+    courses->grade:选择一门课程并查看成绩
+end
+@enduml
