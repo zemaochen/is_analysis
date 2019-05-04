@@ -1,0 +1,17 @@
+@startuml
+skinparam sequenceParticipant underline
+actor teacher
+participant ":course" as course
+participant ":students" as students
+participant ":test" as test
+participant ":grade" as grade
+activate teacher
+loop
+teacher ->course:选择课程
+loop
+course->students:选择批改学生
+students ->test:查阅学生实验
+test->grade:给出成绩
+end
+end
+@enduml
