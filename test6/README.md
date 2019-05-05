@@ -35,7 +35,7 @@
 ### 6.用例及界面详细设计
 <hr>
 
-- #### [“学生列表”用例](./用例/学生列表.md),[界面](./ui/index.html)
+- #### [“学生列表”用例](./用例/学生列表.md),[界面](https://zemaochen.github.io/is_analysis_pages/test6/index.html)
 - #### [“评定成绩”用例](./用例/评定成绩.md),[界面](./ui/index.html)
 - #### [“登录”用例](./用例/登录.md),[界面](./ui/index.html)
 - #### [“登出”用例](./用例/登出.md),[界面](./ui/index.html)
