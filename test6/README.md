@@ -16,7 +16,7 @@
 
 ![实验管理平台](./images/实验管理平台.jpg)
 
-- [界面设计](./ui/界面没设计)
+- 界面设计参见: https://zemaochen.github.io/is_analysis_pages/test6/index
 
 ### 3.用例图设计|[源码](./uml/用例图设计.puml)
 <hr>
