@@ -1,0 +1,26 @@
+@startuml
+skinparam sequenceParticipant underline
+actor user as user
+participant ":students" as students
+participant ":courses" as courses
+participant ":tests" as tests
+participant ":grades" as grades
+activate user
+user->students:查看所有学生信息
+alt 如果user是老师
+activate students
+    students->courses:查看自己的课程
+    deactivate students
+    activate courses
+    courses->tests:发布实验要求
+    deactivate courses
+    activate tests
+    tests->grades:查看学生成绩
+    deactivate tests
+else 如果user是学生
+    courses->tests:查看实验要求
+    activate tests
+    tests->grades:完成查看成绩
+    deactivate tests
+end
+@enduml

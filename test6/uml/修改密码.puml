@@ -1,0 +1,13 @@
+@startuml
+skinparam sequenceParticipant underline
+actor user
+participant ":login页面" as login页面
+participant "：前端存储" as 前端
+participant ":数据库存储" as 数据库
+数据库->数据库:数据库中存储用户信息
+user->login页面:用户先登录
+login页面->数据库:发起修改密码请求，并取出用户信息
+数据库->login页面:输入新密码，两次确认后重新登录
+login页面->前端:跟新前端存储信息
+
+@enduml

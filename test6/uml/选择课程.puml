@@ -1,0 +1,13 @@
+@startuml
+skinparam sequenceParticipant underline
+actor user
+participant ":course" as course
+participant ":courses" as courses
+alt 如果user是老师
+    user->course:新增的课程
+    course->courses:添加到可选列表
+else 如果user是学生
+    user->courses:选择自己的课程
+    courses->course:系统添加到自己的课程表
+end
+@enduml
