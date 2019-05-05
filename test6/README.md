@@ -40,7 +40,7 @@
 - #### [“登录”用例](./用例/登录.md),[界面](https://zemaochen.github.io/is_analysis_pages/test6/login.html)
 - #### [“登出”用例](./用例/登出.md),[界面](https://zemaochen.github.io/is_analysis_pages/test6/bar.html)
 - #### [“选择学期”用例](./用例/选择学期.md),[界面](https://zemaochen.github.io/is_analysis_pages/test6/course.html)
-- #### [“先择课程”用例](./用例/先择课程.md),[界面](https://zemaochen.github.io/is_analysis_pages/test6/course.html)
+- #### [“选择课程”用例](./用例/先择课程.md),[界面](https://zemaochen.github.io/is_analysis_pages/test6/course.html)
 - #### [“修改密码”用例](./用例/修改密码.md),[界面](https://zemaochen.github.io/is_analysis_pages/test6/modifypwd.html)
 - #### [“修改用户信息”用例](./用例/修改用户信息.md),[界面](https://zemaochen.github.io/is_analysis_pages/test6/modify.html)
 - #### [“查看用户信息”用例](./用例/查看用户信息.md),[界面](https://zemaochen.github.io/is_analysis_pages/test6/userinfo.html)
